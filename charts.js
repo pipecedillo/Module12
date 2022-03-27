@@ -125,8 +125,6 @@ function buildCharts(sample) {
           colorscale: "Portland" 
        }
     }];
-  
-
     // 2. Create the layout for the bubble chart.
     var bubbleLayout = {
       title: "Bacteria Cultures Per Sample",
@@ -134,6 +132,7 @@ function buildCharts(sample) {
       automargin: true,
       hovermode: "closest"
   };
+
     // 3. Use Plotly to plot the data with the layout.
     Plotly.newPlot("bubble", bubbleData, bubbleLayout);
   });
